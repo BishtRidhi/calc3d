@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - JavaScript Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Press+Start+2P|Orbitron|Audiowide' rel='stylesheet' type='text/css'><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/foundation/5.5.0/css/foundation.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<form name="calc" id="calculator">
+
+    <!-- A fake product name: the FCC—2015 calculator -->
+    <div class="logo">FCC&#8212;2015</div>
+
+    <!-- Default display -->
+    <div class="row">
+      <textarea name="input" id="text-input" placeholder="0.0" class="columns-3 small"></textarea>
+    </div>
+
+    <div id="number-pad">
+      <!-- The methematical operator buttons -->
+      <div id="operations" class="float right columns-1 small">
+
+        <input role="button" type="button" class="round button alert tiny" name="clear" value="c">
+        <br>
+        <input role="button" type="button" class="round operator button secondary tiny" name="div" value="/">
+        <br>
+        <input role="button" type="button" class="round operator button secondary tiny" name="times" value="*">
+        <br>
+        <input role="button" type="button" class="round operator button secondary tiny" name="minus" value="-">
+        <br>
+        <input role="button" type="button" class="round operator button secondary tiny" name="plus" value="+">
+      </div>
+
+      <!-- The number buttons proper, plus decimal and equals -->
+      <div class="columns-9 small">
+        <div class="row">
+          <input role="button" type="button" class="number button" name="one" value="1">
+
+          <input role="button" type="button" class="number button" name="two" value="2">
+
+          <input role="button" type="button" class="number button" name="three" value="3">
+        </div>
+
+        <div class="row">
+          <input role="button" type="button" class="number button" name="four" value="4">
+
+          <input role="button" type="button" class="number button" name="five" value="5">
+
+          <input role="button" type="button" class="number button" name="six" value="6">
+        </div>
+
+        <div class="row">
+          <input role="button" type="button" class="number button" name="seven" value="7">
+
+          <input role="button" type="button" class="number button" name="eight" value="8">
+
+          <input role="button" type="button" class="number button" name="nine" value="9">
+        </div>
+
+        <div class="row">
+          <input role="button" type="button" class="number button" name="zero" value="0">
+
+          <input role="button" type="button" class="round number button info" name="dot" value=".">
+
+          <input role="button" type="button" class="round button success" name="equals" value="=">
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <!-- Fake calulator body in a layer behind the buttons -->
+  <div class="calc-body">
+    <span>
+    <span class="calc-top"></span>
+    <span class="calc-bottom"></span>
+    <span class="calc-left"></span>
+    <span class="calc-right"></span>
+    <span class="calc-center"></span>
+    </span>
+  </div>
+
+<button class="flipper">Flip it!</button>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
